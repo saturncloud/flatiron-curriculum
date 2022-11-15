@@ -1,0 +1,13 @@
+---
+:lessons:
+- :id: 213515
+  :course_id: 6132
+  :canvas_url: https://learning.flatironschool.com/courses/6132/pages/hadoop-mapreduce-recap
+  :type: page
+- :id: 206008
+  :course_id: 6132
+  :canvas_url: https://learning.flatironschool.com/courses/6132/assignments/206008
+  :type: assignment
+  :grading_type: points
+  :points_possible: 0.0
+  :submission_type: external_tool
