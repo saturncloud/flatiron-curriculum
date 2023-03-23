@@ -1,4 +1,3 @@
-
 # KNN with scikit-learn - Lab
 
 ## Introduction
@@ -60,6 +59,8 @@ Since you've done this before, you should be able to do this quite well yourself
     * For `'Embarked'`, drop the rows that contain missing values
 4. One-hot encode categorical columns such as `'Embarked'` 
 5. Store the target column, `'Survived'`, in a separate variable and remove it from the DataFrame  
+
+While we always want to worry about data leakage, which is why we typically perform the split before the preprocessing, for this data set, we'll do some of the preprocessing first. The reason for this is that some of the values of the variables only have a handful of instances, and we want to make sure we don't lose any of them.
 
 
 ```python

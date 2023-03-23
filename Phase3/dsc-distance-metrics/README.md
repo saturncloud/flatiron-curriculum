@@ -1,4 +1,3 @@
-
 # Distance Metrics
 
 ## Introduction
@@ -32,7 +31,7 @@ The first (and easiest) distance metric you'll cover is **_Manhattan distance_**
 
 <img src='images/manhattan_fs.png' width="300">
 
-In this image, all the lines except for the green line measure the Manhattan distance between the two points.  You'll notice that if you start from the point in the bottom left corner of the grid and count the number of units moved in the X dimension (left and right) and the number of units moved in the Y dimension (up and down), the distance is the for the red, blue, and yellow lines. 
+In this image, all the lines except for the green line measure the Manhattan distance between the two points.  You'll notice that if you start from the point in the bottom left corner of the grid and count the number of units moved in the X dimension (left and right) and the number of units moved in the Y dimension (up and down), the distance is the same for the red, blue, and yellow lines. 
 
 The easiest way to remember Manhattan distance is to use the analogy that provides this distance metric it's name -- look at the picture above, but picture this grid as the famous grid of streets in Manhattan. If you were to take a taxi from point A (bottom left) to point b (top right), how many blocks east or west would the taxi have to travel? How many blocks north or south? How many blocks total?  By calculating the total number of blocks we have to drive, we're actually calculating the Manhattan distance between point A and point B.  
 
@@ -136,7 +135,7 @@ euclidean_distance
 
 ## Minkowski distance
 
-A final distance metric you should be familiar with is **_Minkowski distance_**. THe Minkowski distance is a generalized distance metric across a _Normed Vector Space_. A Normed Vector Space is just a fancy way of saying a collection of space where each point has been run through a function. It can be any function, as long it meets two criteria: 
+A final distance metric you should be familiar with is **_Minkowski distance_**. The Minkowski distance is a generalized distance metric across a _Normed Vector Space_. A Normed Vector Space is just a fancy way of saying a collection of space where each point has been run through a function. It can be any function, as long it meets two criteria: 
 1. the zero vector (just a vector filled with zeros) will output a length of 0, and 
 2. every other vector must have a positive length 
 
@@ -149,16 +148,16 @@ Do you see it? It's the exponent! In this case, the function is just an exponent
 
 ```python 
 # Manhattan Distance is the sum of all side lengths to the first power
-manhattan_distance = np.power((length_side_1 + length_side_2 + ... length_side_n)**1 , 1/1) 
+manhattan_distance = np.power((length_side_1**1 + length_side_2**1 + ... length_side_n**1), 1/1) 
 
 # Euclidean Distance is the square root of the sum of all side lengths to the second power
-euclidean_distance = np.power((length_side_1 + length_side_2 + ... length_side_n)**2, 1/2)
+euclidean_distance = np.power((length_side_1**2 + length_side_2**2 + ... length_side_n**2), 1/2)
 
 # Minkowski Distance with a value of 3 would be the cube root of the sum of all side lengths to the third power
-minkowski_distance_3 = np.power((length_side_1 + length_side_2 + ... length_side_n)**3, 1/3)
+minkowski_distance_3 = np.power((length_side_1**3 + length_side_2**3 + ... length_side_n**3), 1/3)
 
 # Minkowski Distance with a value of 5
-minkowski_distance_5 = np.power((length_side_1 + length_side_2 + ... length_side_n)**5, 1/5)
+minkowski_distance_5 = np.power((length_side_1**5 + length_side_2**5 + ... length_side_n**5), 1/5)
 ```
 
 > **NOTE**: You'll often see Minkowski distance used as a parameter for any distance-based machine learning algorithms inside `sklearn`. 
@@ -167,3 +166,8 @@ minkowski_distance_5 = np.power((length_side_1 + length_side_2 + ... length_side
 ## Summary 
 
 Knowing what you now know about Minkowski distance, and its two special cases, Manhattan and Euclidean distances, think about how you could write a generalized distance function that can calculate any of these, because it's exactly what you'll be doing in our next lab!
+
+
+```python
+
+```

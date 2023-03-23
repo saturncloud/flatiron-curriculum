@@ -239,7 +239,7 @@ None
 """
 ```
 
-Now, implement your chosen strategy using code. (You can also check the solution branch for the answer to the question above if you're really not sure.)
+Now, implement the strategy to drop rows with missing values using code. (You can also check the solution branch for the answer to the question above if you're really not sure.)
 
 
 ```python
@@ -370,7 +370,7 @@ Run the code below to check your work:
 ```python
 # Run this cell without changes
 
-# Confirms you have created a dataframe with the specified name
+# Confirms you have created a DataFrame with the specified name
 assert type(heroes_and_powers_df) == pd.DataFrame
 
 # Confirms you have the right number of rows
@@ -381,7 +381,7 @@ assert heroes_and_powers_df.shape[0] == 647
 # modify this test. We are checking that all of the powers are present as
 # columns.)
 assert [power in heroes_and_powers_df.columns for power in powers_df.index]
-# (If you modified the value of heroes_df along the way, you mgith need to 
+# (If you modified the value of heroes_df along the way, you might need to 
 # modify this as well. We are checking that all of the attribute columns from
 # heroes_df are present as columns in the joined df)
 assert [attribute in heroes_and_powers_df.columns for attribute in heroes_df.columns]

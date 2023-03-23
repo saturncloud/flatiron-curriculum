@@ -1,4 +1,3 @@
-
 # Pivot Tables with Pandas - Lab
 
 ## Introduction
@@ -39,6 +38,7 @@ Now, display the head of the DataFrame to ensure everything loaded correctly.
 
 
 ```python
+# Your code here
 
 ```
 

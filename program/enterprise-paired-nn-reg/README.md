@@ -99,6 +99,10 @@ from keras.wrappers.scikit_learn import KerasClassifier
 import datetime
 ```
 
+    The tensorboard extension is already loaded. To reload it, use:
+      %reload_ext tensorboard
+
+
 ### Loading the data
 
 
@@ -184,10 +188,6 @@ X_train = sc.fit_transform(X_train)
 test = sc.fit_transform(test)
 ```
 
-    /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:37: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only
-    /usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:50: FutureWarning: In a future version of pandas all arguments of DataFrame.drop except for the argument 'labels' will be keyword-only
-
-
 ## Neural Network Model
 
 ### Building the model
@@ -209,7 +209,7 @@ def build_classifier(optimizer):
 
 #### Use grid search to find help you tune the parameters
 
-You can play with optimizers, epochs, and batch sizes. The ones that I'm suggesting are not necessarily the best.
+You can play with optimizers, epochs, and batch sizes. The ones that we're suggesting are not necessarily the best.
 
 
 ```python
@@ -271,25 +271,31 @@ classifier.fit(X_train,
                callbacks=[early_stop, tensorboard_callback])
 
 
-# Warningr: If verbose = 0 (silent) or 2 (one line per epoch), then on TensorBoard's Graphs tab there will be an error.
+# Warning: If verbose = 0 (silent) or 2 (one line per epoch), then on TensorBoard's Graphs tab there will be an error.
 # The other tabs in TensorBoard will still be function, but if you want the graphs then verbose needs to be 1 (progress bar).
 ```
 
 
 ```python
-# Call TensorBoard
+# Call TensorBoard within SaturnCloud [Comment this out if you are not in SaturnCloud]
 import os
 print(f"https://{os.getenv('SATURN_JUPYTER_BASE_DOMAIN')}/proxy/8000/")
-%tensorboard --logdir logs/fit --port 8000 --blind_all
+%tensorboard --logdir logs/fit --port 8000 --bind_all
+# This will generate a hyperlink. Click on that to open TensorBoard!
+# (You'll see a 404 error below the link, just ignore that.)
+
+# Call TensorBoard [Not in SaturnCloud]
+# Uncomment the next time if you are not in SC
+# %tensorboard --logdir logs/fit
 ```
 
 #### Results and Predictions
 
-Calcularte the predictions, save them as a csv, and print them.
+Calculate the predictions, save them as a csv, and print them.
 
 
 ```python
-# results
+# Your code here (use more cells if you need to)
 
 ```
 
