@@ -107,7 +107,7 @@ In Python, you can easily calculate Euclidean distance as follows:
 
 
 ```python
-from math import sqrt 
+from math import sqrt
 
 # Locations of two points A and B
 A = (2, 3, 5)
@@ -118,9 +118,9 @@ euclidean_distance = 0
 # Use a for loop to iterate over each element
 for i in range(3):
     # Calculate the difference, square, and add it
-    euclidean_distance += (A[i] - B[i])**2
+    euclidean_distance += (A[i] - B[i]) ** 2
 
-# Square root of the final result 
+# Square root of the final result
 euclidean_distance = sqrt(euclidean_distance)
 
 euclidean_distance
