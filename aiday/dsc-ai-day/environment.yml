@@ -1,0 +1,13 @@
+name: flatiron-ai
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - python=3.9
+  - numpy
+  - jupyter
+  - pillow
