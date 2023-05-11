@@ -1,4 +1,3 @@
-
 # Keras - Lab
 
 ## Introduction
@@ -12,6 +11,18 @@ You will be able to:
 
 - Build a neural network using Keras 
 - Evaluate performance of a neural network using Keras 
+
+**Keep in Mind:** Keras provide verbose (detailed) outputs that explain how it is using the hardware in your computer to run your neural network. They look similar to the message in the image below. The appearance of these warnings is not an indication that the code is broken. 
+
+<div> <center>
+<table>
+    <tbody>
+        <tr>
+            <td><img width="450", img src="https://curriculum-content.s3.amazonaws.com/data-science/images/images/keras-warning.png" alt="This is the alt-text for the image." height="100" /></td>
+        </tr>
+    </tbody>
+</table> </center>
+<div>
 
 ## Required Packages
 

@@ -1,4 +1,3 @@
-
 # Resampling Methods - Lab
 
 ## Introduction
@@ -66,7 +65,7 @@ B = [1, 3]
 combT(A, B) 
 [([1,2,2], [1,3]),
  ([1,2,3], [1,2]),
- ([1,2,1], [2,3]),
+ ([1,1,2], [2,3]),
  ([1,1,3], [2,2]),
  ([2,2,3], [1,1])]
                
@@ -91,14 +90,14 @@ $\mu_b = \frac{1+3}{2} = \frac{4}{2} = 2$
 
 Giving us
 
-$\mu_a - \mu_b = \frac{5}{3} - 2 = \frac{1}{2}$
+$\mu_a - \mu_b = \frac{5}{3} - 2 = -\frac{1}{3}$
 
 In comparison, for our various combinations we have:
 
-([1,2,2], [1,3]):  $\mu_a - \mu_b = \frac{5}{3} - 2 = \frac{1}{2}$  
+([1,2,2], [1,3]):  $\mu_a - \mu_b = \frac{5}{3} - 2 = -\frac{1}{3}$  
 ([1,2,3], [1,2]):  $\mu_a - \mu_b = 2 - \frac{3}{2} = \frac{1}{2}$  
 ([1,2,1], [2,3]):  $\mu_a - \mu_b = \frac{4}{3} - \frac{5}{3} = -\frac{1}{2}$  
-([1,1,3], [2,2]):  $\mu_a - \mu_b = \frac{5}{3} - 2 = \frac{1}{2}$  
+([1,1,3], [2,2]):  $\mu_a - \mu_b = \frac{5}{3} - 2 = -\frac{1}{3}$  
 ([2,2,3], [1,1]):  $\mu_a - \mu_b = \frac{7}{3} - 1 = \frac{4}{3}$  
 
 A standard hypothesis test for this scenario might be:
