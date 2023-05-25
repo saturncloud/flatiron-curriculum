@@ -19,7 +19,7 @@ spark = SparkSession.builder.appName('Random Forest Iris').master("local[*]").ge
 
 ```
 
-After version 3.0, `SparkSession` is the main entry point for Spark. `SparkSession.builder` creates a spark session. Any thing can go into the `appName()` to specify which jobs you are running currently. Once the spark session is instantiated, you can access the Spark UI at `localhost:4040` to view jobs.
+After version 3.0, `SparkSession` is the main entry point for Spark. `SparkSession.builder` creates a spark session. Any thing can go into the `appName()` to specify which jobs you are running currently. Once the spark session is instantiated, if you are running on your local machine, you can access the Spark UI at `localhost:4040` to view jobs.
 
 
 ```python
