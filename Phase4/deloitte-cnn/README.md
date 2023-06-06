@@ -277,7 +277,9 @@ classifier.fit(X_train,
 
 ```python
 # Call TensorBoard
-%tensorboard --logdir logs/fit
+import os
+print(f"https://{os.getenv('SATURN_JUPYTER_BASE_DOMAIN')}/proxy/8000/")
+%tensorboard --logdir logs/fit --port 8000 --bind_all
 ```
 
 #### Results and Predictions
