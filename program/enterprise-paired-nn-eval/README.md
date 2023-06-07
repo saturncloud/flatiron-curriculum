@@ -406,7 +406,7 @@ def build_classifier(optimizer):
 # Note: Do not use regularization methods or GridSearch. Those will be for next time!
 ```
 
-#### Fitting the optimal model and evaluating with `TensorBoaard`
+#### Fitting the optimal model and evaluating with `TensorBoard`
 
 #### `TensorBoard`
 
@@ -435,7 +435,7 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram
     To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
 
 
-#### Fitting the optimal model and evaluating with `TensorBoaard`
+#### Fitting the optimal model and evaluating with `TensorBoard`
 
 
 ```python
