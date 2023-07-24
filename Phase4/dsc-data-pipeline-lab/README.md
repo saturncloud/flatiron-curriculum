@@ -42,7 +42,7 @@ Currently, the capability of the data center is limited based on the square foot
 # your solution
 ```
 
-4. In the end, you'll need to pursuade leadership why you need to migrate a system to another place, i.e. cloud, when in the eyes of leadership, everything is working fine. Write out cons/pros based on the shared categories, like cost, human resources, etc.
+4. In the end, you'll need to persuade leadership why you need to migrate a system to another place, i.e. cloud, when in the eyes of leadership, everything is working fine. Write out cons/pros based on the shared categories, like cost, human resources, etc.
 
 
 ```python
