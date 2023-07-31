@@ -31,7 +31,7 @@ In reality, all features will be connected with all nodes in the hidden layer, a
 
 When we generalize this, a neural network looks like the configuration below. 
 
-As you can see, to implement a neural network, we need to feed it the inputs $x_i$ (location, pricing, and variety in this example) and the outcome $y$ (pricing in this example), and all the features in the middle will be figured out automatically in the network. That's why this layer is called the **hidden layer**, with the nodes representing **hidden units**.  
+As you can see, to implement a neural network, we need to feed it the inputs $x_i$ (location, pricing, and variety in this example) and the outcome $y$ (sales in this example), and all the features in the middle will be figured out automatically in the network. That's why this layer is called the **hidden layer**, with the nodes representing **hidden units**.  
 
 <img src="./images/new_first_network_num.png" width=600> 
 
@@ -147,6 +147,7 @@ import numpy as np
 
 fig = plt.figure()
 ax = fig.add_subplot(projection='3d')
+ax = fig.add_subplot()
 
 # Generate data
 X = np.arange(-5, 5, 0.1)
@@ -173,12 +174,6 @@ ax.set_zticklabels([])
 
 plt.show()
 ```
-
-
-    
-![png](index_files/index_24_0.png)
-    
-
 
 Congratulations! You have gotten to the point where you have the expression for the cost function and the loss function. The step we have just taken is called **forward propagation**.
 
