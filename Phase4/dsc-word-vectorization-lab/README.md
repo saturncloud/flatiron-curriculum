@@ -213,7 +213,7 @@ def main(filenames):
 tf_idf_all_docs = main(filenames)
 ```
 
-### Visualizing our Vectorizations
+### Level Up: Visualizing our Vectorizations (Optional)
 
 Now that we have a tf-idf representation of each document, we can move on to the fun part -- visualizing everything!
 
