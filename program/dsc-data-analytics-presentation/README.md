@@ -10,6 +10,10 @@ In this lesson you will use all of the information you have learned and do a sho
 
 The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think an investor should take if they were shopping for property in this area.
 
+## Objectives
+* Perform basic data analysis
+* Communicate analysis results
+
 ## Dataset Overview
 
 The dataset provides information about various properties, including details such as price, number of bedrooms and bathrooms, square footage, location, and more. The data can be found in this repository, the file name is `housing_data.csv`. Below is a description of each of the columns ('features'):
