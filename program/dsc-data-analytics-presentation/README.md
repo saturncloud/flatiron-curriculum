@@ -10,6 +10,35 @@ In this lesson you will use all of the information you have learned and do a sho
 
 The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think an investor should take if they were shopping for property in this area.
 
+## Dataset Overview
+
+The dataset provides information about various properties, including details such as price, number of bedrooms and bathrooms, square footage, location, and more. The data can be found in this repository, the file name is `housing_data.csv`. Below is a description of each of the columns ('features'):
+
+* id - unique identified for a house
+* dateDate - house was sold
+* pricePrice - is prediction target
+* bedroomsNumber - of Bedrooms/House
+* bathroomsNumber - of bathrooms/bedrooms
+* sqft_livingsquare - footage of the home
+* sqft_lotsquare - footage of the lot
+* floorsTotal - floors (levels) in house
+* waterfront - House which has a view to a waterfront
+* view - Has been viewed
+* condition - How good the condition is ( Overall )
+* grade - overall grade given to the housing unit, based on King County grading system
+* sqft_above - square footage of house apart from basement
+* sqft_basement - square footage of the basement
+* yr_built - Built Year
+* yr_renovated - Year when house was renovated
+* zipcode - zip
+* lat - Latitude coordinate
+* long - Longitude coordinate
+* sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors
+* sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors
+
+## Getting Started
+Begin by loading the dataset and taking a quick look at its structure.
+
 
 ```python
 import pandas as pd
