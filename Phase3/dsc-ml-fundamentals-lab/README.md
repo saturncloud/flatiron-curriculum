@@ -16,7 +16,7 @@ You will be able to:
 
 ## Your Task: Build a Model to Predict Blood Pressure
 
-![stethoscope sitting on a case](images/stethoscope.jpg)
+![stethoscope sitting on a case](https://curriculum-content.s3.amazonaws.com/data-science/images/stethoscope.jpg)
 
 <span>Photo by <a href="https://unsplash.com/@marceloleal80?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Marcelo Leal</a> on <a href="https://unsplash.com/s/photos/blood-pressure?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 

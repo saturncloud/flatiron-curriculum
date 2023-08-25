@@ -18,7 +18,7 @@ You will be able to:
 
 In this section, you'll be focusing on a foundational **_Supervised Learning_** algorithm, the **_K-Nearest Neighbors_**, or **_KNN_** for short. In order to understand how this algorithm works, you first have to understand some **_distance metrics_**, and how you can use them to tell us how similar two objects are. 
 
-<img src='images/knn_fs.png' width = "300">
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/knn_fs.png' width = "300">
 
 The assumption that distance-based classifiers like KNN are built on is that **_distance helps us quantify similarity_**.  Objects that are more alike are more likely to be the same class. By treating each column in your dataset as a separate dimension, you can plot each data point that you have and measure the distance between them! 
 
@@ -29,7 +29,7 @@ You might remember learning about how to calculate the distance between two poin
 
 The first (and easiest) distance metric you'll cover is **_Manhattan distance_**.  Manhattan distance is aptly named, because it measures the distance from one point to another traveling along the axes of a grid. Take a look at the following image:
 
-<img src='images/manhattan_fs.png' width="300">
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/manhattan_fs.png' width="300">
 
 In this image, all the lines except for the green line measure the Manhattan distance between the two points.  You'll notice that if you start from the point in the bottom left corner of the grid and count the number of units moved in the X dimension (left and right) and the number of units moved in the Y dimension (up and down), the distance is the same for the red, blue, and yellow lines. 
 
@@ -90,7 +90,7 @@ The next and most common distance metric is **_Euclidean distance_**.  The equat
 
 In this case, that is:  $6^2 + 6^2 =  \sqrt{72} \approx 8.485$
 
-<img src='images/euclidean_fs.png' width = "200">
+<img src='https://curriculum-content.s3.amazonaws.com/data-science/images/euclidean_fs.png' width = "200">
 
 
 ### Working with more than two dimensions
