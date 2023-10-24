@@ -19,7 +19,7 @@ You're probably already quite familiar with the general idea of interacting with
 
 ### Data in Memory
 
-In the previous lessons, we have mainly emphasized working with Python variables *in memory*. When something is in memory, that means that it can be easily modified and that it no longer exists once the software using it (in this case, a Python kernel) stops running.
+We have mainly emphasized working with Python variables *in memory*. When something is in memory, that means that it can be easily modified and that it no longer exists once the software using it (in this case, a Python kernel) stops running.
 
 For example, take this code snippet:
 
@@ -103,7 +103,7 @@ As you can see, variables in memory are flexible and convenient, but they are in
 
 In contrast to data in memory, files *on disk* are stored more permanently.
 
-As we have seen previously, we can view a list of files in the current directory using the bash command `ls`:
+We can view a list of files in the current directory using the bash command `ls`:
 
 
 ```python
@@ -567,7 +567,7 @@ Some of the tools we will introduce later will handle the file opening/closing f
 
 The examples so far have used files containing text data, which is straightforward to use in Python because it neatly corresponds to the string data type. For more-complex file types, we will often need to use additional modules or libraries.
 
-We will go over the most important tools in more depth in future lessons, but here is a high-level overview of how you might open various file types with Python. For now we will only look at reading this data, but there is almost always a corresponding technique with that library to write to that type of file, just like we have both `.read` and `.write` with the built-in Python file objects.
+Here is a high-level overview of how you might open various file types with Python. For now we will only look at reading this data, but there is almost always a corresponding technique with that library to write to that type of file, just like we have both `.read` and `.write` with the built-in Python file objects.
 
 ### Tabular Data Files
 
