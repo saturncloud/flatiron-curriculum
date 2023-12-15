@@ -2,15 +2,15 @@
 
 ## Introduction
 
-In the last lesson, we derived the functions that we help us descend along our cost functions efficiently.  Remember that this technique is not so different from what we saw with using the derivative to tell us our next step size and direction in two dimensions.  
+There are functions that we help us descend along cost functions efficiently by using the derivative. 
 
 <img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-applying-gradient-descent-lab/master/images/slopes.png" alt="RSS with changes to slope" />
 
-When descending along our cost curve in two dimensions, we used the slope of the tangent line at each point, to tell us how large of a step to take next.  And with the cost curve being a function of $m$ and $b$, we had to use the gradient to determine each step.  
+When descending along our cost curve in two dimensions, we use the slope of the tangent line at each point, which tells us how large of a step to take next.  Since the cost curve is a function of $m$ and $b$, we use the gradient to determine each step.  
 
 <img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-applying-gradient-descent-lab/master/images/new_gradientdescent.png" alt="gradient descent in 3d with absolute minimum highlighted" width="600">
 
-But really it's an analogous approach.  Just like we can calculate the use derivative of a function $f(x)$ to calculate the slope at a given value of $x$ on the graph and thus our next step.  Here, we calculated the partial derivative with respect to both variables, our slope and y-intercept, to calculate the amount to move next in either direction and thus to steer us towards our minimum.   
+We can calculate the derivative of a function $f(x)$ to calculate the slope at a given value of $x$ on the graph and thus our next step.  Here, we calculated the partial derivative with respect to both variables to find the amount to move next in either direction and thus to steer us towards our minimum.
 
 ## Objectives
 
@@ -32,7 +32,7 @@ Now the formulas above tell us to take some dataset, with values of $x$ and $y$,
 
 `current_b` =  `old_b` $ - ( -2*\sum_{i=1}^n \epsilon_i )$
 
-Ok let's turn this into code.  First, let's initialize our data like we did before:
+Let's turn this into code.  First, let's initialize our data like we did before:
 
 
 ```python
@@ -90,7 +90,7 @@ The code above represents **just one** update to our regression line, and theref
 
 ## Tweaking our approach 
 
-Ok, the above code is very close to what we want, but we just need to make tweaks to our code before it's perfect.
+The above code is very close to what we want, but we just need to make tweaks to our code before it's perfect.
 
 The first one is obvious if we think about what these formulas are really telling us to do.  Look at the graph below, and think about what it means to change each of our $m$ and $b$ variables by at least the sum of all of the errors, of the $y$ values that our regression line predicts and our actual data.  That would be an enormous change.  To ensure that we drastically updating our regression line with each step, we multiply each of these partial derivatives by a learning rate.  As we have seen before, the learning rate is just a small number, like $.
 01$ which controls how large our updates to the regression line will be.  The learning rate is  represented by the Greek letter eta, $\eta$, or alpha $\alpha$.  We'll use eta, so $\eta = .01$ means the learning rate is $.01$.
@@ -117,11 +117,11 @@ Make these changes below:
 
 ```
 
-So our code now reflects what we know about our gradient descent process.  Start with an initial regression line with values of $m$ and $b$.  Then for each point, calculate how the regression line fares against the actual point (that is, find the error).  Update what the next step to the respective variable should be by using the partial derivative.  And after iterating through all of the points, update the value of $b$ and $m$ appropriately, scaled down by a learning rate.
+The code now reflects what we know about our gradient descent process.  Start with an initial regression line with values of $m$ and $b$.  Then for each point, calculate how the regression line fares against the actual point (that is, find the error).  Update what the next step to the respective variable should be by using the partial derivative.  And after iterating through all of the points, update the value of $b$ and $m$ appropriately, scaled down by a learning rate.
 
 ## Seeing our gradient descent formulas in action
 
-As mentioned earlier, the code above represents just one update to our regression line, and therefore just one step towards our best fit line.  To take multiple steps we wrap the process we want to duplicate in a function called `step_gradient` and then can call that function as much as we want. With this function:
+The code above represents just one update to our regression line, and therefore just one step towards our best fit line.  To take multiple steps we wrap the process we want to duplicate in a function called `step_gradient` and then can call that function as much as we want. With this function:
 
 - Include a learning_rate of 0.1
 - Return a tuple of (b,m)  
@@ -146,7 +146,7 @@ Now let's initialize `b` and `m` as 0 and run a first iteration of the `step_gra
 # b= 3.02503, m= 2.07286
 ```
 
-So just looking at input and output, we begin by setting $b$ and $m$ to 0 and 0.  Then from our step_gradient function, we receive new values of $b$ and $m$ of 3.02503 and 2.0728.  Now what we need to do, is take another step in the correct direction by calling our step gradient function with our updated values of $b$ and $m$.
+By looking at input and output, we begin by setting $b$ and $m$ to 0 and 0.  Then from our step_gradient function, we receive new values of $b$ and $m$ of 3.02503 and 2.0728.  Now what we need to do, is take another step in the correct direction by calling our step gradient function with our updated values of $b$ and $m$.
 
 
 ```python
@@ -243,8 +243,8 @@ Look at the last step
 
 ## Level up - optional
 
-Try your own gradient descent algorithm on the Boston Housing data set, and compare with the result from scikit learn!
-Be careful to test on a few continuous variables at first, and see how you perform. Scikit learn has built-in "regularization" parameters to make optimization more feasible for many parameters.
+Try your own gradient descent algorithm on the Boston Housing data set, and compare with the result from scikit-learn.
+Be careful to test on a few continuous variables at first, and see how you perform. Scikit-learn has built-in "regularization" parameters to make optimization more feasible for many parameters.
 
 ## Summary
 
